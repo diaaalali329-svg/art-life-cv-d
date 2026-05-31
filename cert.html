@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشهادات | ضياء العلي</title>
+    <style>
+        /* التنسيقات الهندسية الأساسية */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #34495e;
+            color: #f1c40f;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 40px;
+            border-bottom: 3px solid #f1c40f;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        /* نظام الشبكة (Flexbox) لترتيب الشهادات */
+        .cert-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .cert-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .cert-card:hover {
+            transform: translateY(-5px);
+        }
+        .cert-card img {
+            width: 100%;
+            border: 2px solid #bdc3c7;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شريط التنقل المتطابق مع ملفاتك -->
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="ccv.html">السيرة الذاتية</a>
+        <a href="projects.html">الأعمال</a>
+        <a href="cert.html">الشهادات</a>
+    </nav>
+
+    <div style="text-align: center;">
+        <h1>الشهادات الاحترافية</h1>
+    </div>
+
+    <!-- حاوية البطاقات -->
+    <div class="cert-container">
+        
+        <!-- شهادة HTML -->
+        <div class="cert-card">
+            <img src="html-cert.png" alt="شهادة مقدمة في HTML">
+            <h3 style="color: #2c3e50; font-size: 1.1em; margin-top: 15px;">مقدمة في HTML</h3>
+            <p style="margin: 5px 0; color: #7f8c8d; font-weight: bold;">منصة سطر التعليمية</p>
+        </div>
+
+        <!-- شهادة الأمن السيبراني -->
+        <div class="cert-card">
+            <img src="cyber-cert.png" alt="شهادة الأمن السيبراني">
+            <h3 style="color: #2c3e50; font-size: 1.1em; margin-top: 15px;">مقدمة في الأمن السيبراني</h3>
+            <p style="margin: 5px 0; color: #7f8c8d; font-weight: bold;">منصة سطر التعليمية</p>
+        </div>
+
+        <!-- شهادة بايثون -->
+        <div class="cert-card">
+            <img src="python-cert.png" alt="شهادة بايثون 102">
+            <h3 style="color: #2c3e50; font-size: 1.1em; margin-top: 15px;">Python 102</h3>
+            <p style="margin: 5px 0; color: #7f8c8d; font-weight: bold;">منصة سطر التعليمية</p>
+        </div>
+
+        <!-- شهادة ICDL -->
+        <div class="cert-card">
+            <img src="icdl-cert.png" alt="شهادة ICDL">
+            <h3 style="color: #2c3e50; font-size: 1.1em; margin-top: 15px;">الرخصة الدولية لقيادة الحاسب</h3>
+            <p style="margin: 5px 0; color: #7f8c8d; font-weight: bold;">ICDL Foundation</p>
+        </div>
+
+        <!-- شهادة إدراك -->
+        <div class="cert-card">
+            <img src="edraak-cert.png" alt="شهادة إدراك">
+            <h3 style="color: #2c3e50; font-size: 1.1em; margin-top: 15px;">أساسيات الحاسوب (ICDL Base)</h3>
+            <p style="margin: 5px 0; color: #7f8c8d; font-weight: bold;">منصة إدراك</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

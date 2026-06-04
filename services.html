@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب خدمات | آرت لايف</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #34495e;
+            color: #f1c40f;
+        }
+        .form-container {
+            max-width: 650px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #f1c40f;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #34495e;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        .payment-box {
+            background-color: #e8f8f5;
+            border: 2px dashed #1abc9c;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #f1c40f;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="ccv.html">السيرة الذاتية</a>
+        <a href="projects.html">الأعمال</a>
+        <a href="cert.html">الشهادات</a>
+        <a href="services.html">طلب الخدمات</a>
+    </nav>
+
+    <div class="form-container">
+        <div style="text-align: center;">
+            <h2>طلب خدمة تقنية</h2>
+            <p style="color: #7f8c8d; margin-bottom: 20px;">يرجى تعبئة النموذج وإتمام الدفع لنتواصل معك للبدء فوراً.</p>
+        </div>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+            
+            <label>اسم الخدمة المطلوبة بالتفصيل:</label>
+            <textarea name="Service_Details" rows="4" placeholder="مثال: برمجة موقع تعريفي..." required></textarea>
+            
+            <label>الاسم الكامل:</label>
+            <input type="text" name="Full_Name" required>
+            
+            <label>الإيميل الشخصي للتواصل:</label>
+            <input type="email" name="Email" placeholder="example@email.com" required>
+            
+            <label>رقم التواصل (مع رمز النداء الدولي):</label>
+            <input type="tel" name="Phone" placeholder="+963 XXXXXXXX" required>
+            
+            <div class="payment-box">
+                <h3 style="color: #16a085; margin-top: 0;">الدفع عبر شام كاش 💳</h3>
+                <p style="color: #34495e; font-size: 0.9em;">امسح الرمز أو انسخ المعرف لتحويل التكلفة المتفق عليها</p>
+                
+                <div style="margin: 15px auto; padding: 10px; background: #fff; border-radius: 10px; display: inline-block;">
+                    <img src="cham-qr.jpg" alt="QR Code شام كاش" style="width: 180px; border-radius: 8px;">
+                    <p style="color: #34495e; font-size: 0.8em; margin-top: 5px; font-weight: bold; font-family: monospace; direction: ltr;">
+                        84d062ee53931d5c07a44bad2563956d
+                    </p>
+                </div>
+            </div>
+
+            <label style="color: #e74c3c;">رقم إشعار التحويل (هام لتأكيد الطلب):</label>
+            <input type="text" name="ChamCash_Transaction_ID" placeholder="أدخل رقم العملية أو إشعار شام كاش هنا" required>
+            
+            <button type="submit">إرسال الطلب وتأكيد الدفع</button>
+        </form>
+    </div>
+
+</body>
+</html>
